@@ -6,6 +6,7 @@ import veterinarioRoutes from "./routes/veterinarioRoutes.js";
 import pacienteRoutes from "./routes/pacienteRoutes.js";
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
@@ -37,7 +38,6 @@ conectarDB();
 // });
 
 // app.use(cors(corsOptions));
-app.use(cors());
 
 app.use("/api/veterinarios", veterinarioRoutes);
 app.use("/api/pacientes", pacienteRoutes);
