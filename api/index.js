@@ -13,7 +13,7 @@ dotenv.config();
 
 conectarDB();
 
-const dominiosPermitidos = [process.env.FRONT_URL];
+const dominiosPermitidos = "https://mern-veterinari-front.vercel.app";
 
 const corsOptions = {
   origin: function (origin, callback) {
